@@ -1,0 +1,495 @@
+* {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0rem;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    width: 151.9rem;
+    background: black;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-box {
+    width: 9.5rem;
+    height: 50rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    background: url("C:/HTML/dresses/golden100000.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: width 0.5s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100);
+
+}
+
+.container h1 {
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    font-family: nunito;
+
+}
+
+.container h1::before {
+    position: absolute;
+    content: attr(data-text);
+    text-shadow: 0rem 0rem 2rem white;
+    filter: blur(1rem) brightness(0);
+    animation: flicker 2s linear 1s forwards;
+
+}
+
+@keyframes flicker {
+
+    0% {
+        filter: blur(0.5rem) brightness(1);
+    }
+
+    3% {
+        filter: blur(0.5rem) brightness(0);
+    }
+
+    6% {
+        filter: blur(0.5rem) brightness(0);
+    }
+
+    7% {
+        filter: blur(0.5rem) brightness(1);
+    }
+
+    8% {
+        filter: blur(0.5rem) brightness(0);
+    }
+
+    9% {
+        filter: blur(0.5rem) brightness(1);
+    }
+
+    10% {
+        filter: blur(0.5rem) brightness(0);
+    }
+
+    20% {
+        filter: blur(0.5rem) brightness(1);
+    }
+
+    50% {
+        filter: blur(0.5rem) brightness(1);
+    }
+
+    99% {
+        filter: blur(0.5rem) brightness(0);
+    }
+
+    100% {
+        filter: blur(0.5rem) brightness(1);
+    }
+}
+
+.img-box:nth-child(2) {
+    background: url("C:/HTML/dresses/winedress100.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.img-box:nth-child(3) {
+    background: url("C:/HTML/dresses/jacket100.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(5) {
+    background: url("C:/HTML/dresses/reddress1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(4) {
+    background: url("C:/HTML/dresses/orangedress100.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(6) {
+    background: url("C:/HTML/dresses/minired.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(7) {
+    background: url("C:/HTML/dresses/darkpink.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box h2 {
+    opacity: 0;
+    margin-top: 20rem;
+}
+
+
+.img-box:hover {
+    width: 43rem;
+    height: 58rem;
+    filter: grayscale(0);
+}
+
+.img-box:hover h2 {
+    opacity: 1;
+    transition-duration: 2s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 51.5rem;
+}
+
+.img-box:hover h2 a {
+    font-family: 'Sacramento-Regular';
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: aliceblue;
+
+}
+
+p {
+    font-size: large;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 1.5rem;
+
+}
+
+h2 {
+    font-family: mialgor;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 51.5rem;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#up-black-arrow {
+    background-color: white;
+}
+
+/* gold */
+
+
+
+.gold {
+    width: 43rem;
+    height: 58rem;
+}
+
+.goldcontainer {
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    background: black;
+    width: 151.9rem;
+}
+
+.goldgallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.goldimg-box img {
+
+    width: 25rem;
+    height: 55rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.goldimg-box img:nth-child(3) {
+
+    width: 40rem;
+    height: 55rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.goldimg-box h1 {
+    margin-top: 0rem;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 0rem;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+
+/* wine */
+
+
+.winecontainer {
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    background: black;
+    width: 151.9rem;
+}
+
+.winegallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wineimg-box img {
+    width: 50rem;
+    height: 55rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+/* JACKET */
+
+.jacketcontainer {
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    background: black;
+    width: 151.9rem;
+}
+
+.jacketgallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.jacketimg-box img {
+    width: 35rem;
+    height: 55rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+/* ORANGE */
+
+
+.orangecontainer {
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    background: black;
+    width: 151.9rem;
+}
+
+.orangegallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.orangeimg-box img {
+    width: 35rem;
+    height: 55rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+/* red */
+.redcontainer p {
+
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2.5rem;
+
+}
+
+.redcontainer P {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.redcontainer {
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    background: black;
+    width: 151.9rem;
+}
+
+.redgallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.redimg-box img {
+    width: 35rem;
+    height: 55rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+
+.redimg-box img:nth-child(2) {
+    width: 70rem;
+    height: 50rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* minired */
+
+
+.miniredimg-box p {
+
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2.5rem;
+
+}
+
+.miniredcontainer {
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    background: black;
+    width: 151.9rem;
+}
+
+.miniredgallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.miniredimg-box img {
+    width: 50rem;
+    height: 55rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+/* nanijiwali */
+
+
+.darkpinkcontainer {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: black;
+    width: 151.9rem;
+}
+
+.darkpinkgallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.darkpinkimg-box img {
+    width: 50rem;
+    height: 55rem;
+    margin: 1rem;
+    border-radius: 5rem;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+#home {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 60%;
+    }
+
+}
